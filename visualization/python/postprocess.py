@@ -3,7 +3,6 @@ import os.path
 import argparse
 from util import *
 from scipy.io import savemat
-from util_vtk import visualization
 
 if __name__ == '__main__':
     cmd_parser = argparse.ArgumentParser(description='Postprocessing .mat voxel file.')
