@@ -20,7 +20,7 @@ def read_tensor(filename, varname='voxels'):
         assert dims[1] == 1
         dims = (dims[0],) + tuple(dims[2:])
     elif len(dims) == 3:
-        dims = (1) + dims
+        dims = (1,) + dims
     else:
         assert len(dims) == 4    
     result = np.reshape(voxels, dims)
